@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  websocket-server:
+    build: .
+    environment:
+      AUTH_TOKEN: "c571d2d4e914e5860a"
+      BIND_HOST: "0.0.0.0"
+      BIND_PORT: "8765"
+    ports:
+      - "8765:8765"
+    restart: always
